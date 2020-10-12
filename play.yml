@@ -4,5 +4,4 @@
   hosts: all
   tasks:
     - name: Update APT
-      apt:
-        update_cache: yes
+      ping:
