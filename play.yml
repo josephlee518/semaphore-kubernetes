@@ -1,7 +1,0 @@
----
-- name: update apt
-  remote_user: dcadmin
-  hosts: all
-  tasks:
-    - name: Update APT
-      ping:
