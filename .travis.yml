@@ -1,0 +1,12 @@
+sudo: true
+dist: trusty
+
+jobs:
+  include:
+    - stage: build semaphore docker images
+      script:
+        - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
+        - docker build -t semaphore-docker:2.6.4 -f Dockerfile .
+        - docker images
+        - docker tag semaphore-docker:2.6.4 $DOCKER_USERNAME/semaphore-docker:2.6.4
+        - docker push $DOCKER_USERNAME/semaphore-docker:2.6.4
