@@ -18,6 +18,9 @@ spec:
           limits:
             memory: "512Mi"
             cpu: "1"
+        env:
+          - name: MYSQL_ROOT_PASSWORD
+            value: "semaphoreDB!"
         command: [ "/bin/bash", "-c", "--" ]
         args: [ "while true; do sleep 30; done;" ]
         ports:
