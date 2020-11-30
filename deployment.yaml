@@ -1,3 +1,11 @@
+# /*
+#  * ----------------------------------------------------------------------------
+#  * "THE BEER-WARE LICENSE" (Revision 42):
+#  * <jaeseung172@knou.ac.kr> wrote this file.  As long as you retain this notice you
+#  * can do whatever you want with this stuff. If we meet some day, and you think
+#  * this stuff is worth it, you can buy me a beer in return.   SEUNGWOO LEE
+#  * ----------------------------------------------------------------------------
+#  */
 apiVersion: apps/v1
 kind: Deployment
 metadata:
